@@ -1,4 +1,6 @@
 import React from 'react'
+// import ShowMovies from './ShowMovies'
+import ShowMoviesReduxThunk from './ShowMoviesReduxThunk'
 
 function App () {
   return (
@@ -7,7 +9,7 @@ function App () {
         <h1>Maxwell&apos;s favourite movies</h1>
       </header>
       <section className="main">
-        {/* add your code here */}
+        <ShowMoviesReduxThunk />
       </section>
     </>
   )
