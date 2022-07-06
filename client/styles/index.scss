@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500&display=swap');
 
-$background-color: #333333;
-$text-color: whitesmoke;
+$background-color: #ffffff;
+$text-color: rgb(0, 0, 0);
 $serif: 'Lora', serif;
 $sans-serif: 'Poppins', sans-serif;
 
@@ -18,6 +18,27 @@ body {
   color: $text-color;
   // display: flex;
 }
+
+.hero {
+  background: black url('../../server/public/images/tom-cruise.jpg') center / cover;
+  background-repeat:space;
+  font-size: 3rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movieTitle {
+  font-size: 2rem;
+  gap: 3rem;
+}
+#app > section.section > div.px-12 > section > div:nth-child(9) {
+  padding-right: 0%;
+}
+
 
 
 .main {
@@ -36,21 +57,49 @@ justify-content: center;
 h1 {
   display: flex;
   justify-content: center;
-  font-size: 3rem;
+  // font-size: 3rem;
   // font: $serif;
 }
 
 form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-weight: 500;
   font-size: 1.3rem;
-  text-align: end;
+  // text-align: end;
 }
 
 label {
   padding-top: 3vh;
 }
+
+.column {
+  text-align: end;
+  margin-right: 0;
+  margin-bottom: 5vh;
+}
+
+div.notification {
+  margin-bottom:3vh;
+  width: 100%;
+}
+
+.notification {
+  gap: 2em;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+}
+
+.addMovie {
+  margin-top: 3rem;
+ 
+}
+
+
+
+
 
 
 /* CSS */

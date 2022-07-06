@@ -17,18 +17,23 @@ const ShowMoviesReduxThunk = () => {
 
   return (
     <>
-    <div className='showMovies'>
+    <section className='container is-fluid'>
     {movies && movies.map(movies => {
         return (
-        <div key={movies.id}>
-          <h2>{movies.movie}</h2>
-          <ul>
-            <li>Artist: {movies.director}</li>
-            <li>Year: {movies.year}</li>
-          </ul>
+        <div className='movieCard container columns my-12 ' key={movies.id}>
+          <div className='notification'>
+          <h2 className='movieTitle'>{movies.movie}</h2>
+          <div className='movieDetails column'>
+            
+              <ul >
+                <li>Director: {movies.director}</li>
+                <li>Year: {movies.year}</li>
+              </ul>
+            </div>
+          </div>
         </div>
       )})}
-      </div>
+      </section>
     </>
     // <div>
     //   <h1>My favourite movies</h1>

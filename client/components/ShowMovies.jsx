@@ -14,7 +14,7 @@ const ShowMovies = () => {
   }, [])
  
   return (
-    <div>
+    <div className="container is-fluid">
       {movies && movies.map(movie => {
         return <h2 key={movie.id}>{movies.movie}</h2>
       })}
