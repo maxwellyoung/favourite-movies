@@ -1,4 +1,5 @@
 import React from 'react'
+import AddMovieForm from './AddMovieForm'
 // import ShowMovies from './ShowMovies'
 import ShowMoviesReduxThunk from './ShowMoviesReduxThunk'
 
@@ -10,6 +11,7 @@ function App () {
       </header>
       <section className="main">
         <ShowMoviesReduxThunk />
+        <AddMovieForm />
       </section>
     </>
   )

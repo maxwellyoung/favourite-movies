@@ -8,7 +8,7 @@ const ShowMoviesReduxThunk = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    return dispatch(fetchMovies())
+     dispatch(fetchMovies())
   },[])
 
   const movies = useSelector(state => state.movies)
@@ -20,13 +20,13 @@ const ShowMoviesReduxThunk = () => {
     <div className='showMovies'>
     {movies && movies.map(movies => {
         return (
-        <>
-          <h2>Movie: {movies.movie}</h2>
-          <ul key={movies.id}>
+        <div key={movies.id}>
+          <h2>{movies.movie}</h2>
+          <ul>
             <li>Artist: {movies.director}</li>
             <li>Year: {movies.year}</li>
           </ul>
-        </>
+        </div>
       )})}
       </div>
     </>

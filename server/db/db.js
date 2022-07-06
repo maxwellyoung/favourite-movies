@@ -1,7 +1,7 @@
 const connection = require('./connection')
 
 function getMovies(db = connection) {
-	return db('movies')
+	return db('movies').select()
 }
 
 module.exports = {
