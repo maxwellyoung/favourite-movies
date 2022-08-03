@@ -1,8 +1,11 @@
 {
   "name": "my-fullstack-collection",
   "version": "0.1.0",
-  "description": "Todo Full Stack",
-  "repository": "https://https://github.com/dev-academy-challenges/todo-full-stack",
+  "description": "Full Stack",
+  "engines": {
+    "node": "16.x"
+  },
+  "repository": "https://github.com/maxwellyoung/favourite-movies",
   "main": "server/index.js",
   "scripts": {
     "build": "run-p build:client build:server",
