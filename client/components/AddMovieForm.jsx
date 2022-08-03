@@ -42,7 +42,7 @@ const AddMovieForm = () => {
             <input className='input-field' placeholder="Director" type="type" id="director" name="director" onChange={handleChange}/>
           </div>
           <div className='input'>
-          <input className='input-field' placeholder="Title" type="type" id="year" name="year" onChange={handleChange}/>
+          <input className='input-field' placeholder="Year" type="type" id="year" name="year" onChange={handleChange}/>
           </div>
           <div className='action'>
             <button className="button-39" >Add</button>
