@@ -20,3 +20,5 @@
 
 # # Dotenv env settings
 # .env
+node_modules
+node_modules
