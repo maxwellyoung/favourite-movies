@@ -81,6 +81,7 @@
     "autoprefixer": "^10.4.7",
     "bulma": "^0.9.4",
     "bulma-start": "^0.0.5",
+    "dotenv": "^16.0.1",
     "express": "^4.17.2",
     "knex": "^2.1.0",
     "pg": "^8.7.1",

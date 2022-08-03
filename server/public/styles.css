@@ -1,0 +1,155 @@
+/*!*******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./client/styles/index.scss ***!
+  \*******************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200;1,300;1,400;1,500&display=swap);
+/*!***********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./client/styles/index.scss (1) ***!
+  \***********************************************************************************************************************/
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.hero {
+  background: black url(18fdf53a2bea3d893715.jpg) center/cover;
+  background-repeat: space;
+  font-size: 3rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movieTitle {
+  font-size: 2.2rem;
+  gap: 3rem;
+}
+
+.movies-container {
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.header {
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  padding: 2rem 1rem 0;
+}
+
+.label {
+  color: #8597a3;
+  position: absolute;
+  transition: 0.25s ease;
+}
+
+.column {
+  text-align: end;
+  margin-right: 0;
+  margin-bottom: 5vh;
+}
+
+.input {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  padding-top: 1.5rem;
+}
+.input + .input {
+  margin-top: 1.5rem;
+}
+
+.input-field {
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  font: inherit;
+  font-size: 1.125rem;
+  padding: 0.25rem 0;
+}
+.input-field:focus, .input-field:valid {
+  outline: 0;
+  border-bottom-color: #6658d3;
+}
+.input-field:focus + .input-label, .input-field:valid + .input-label {
+  color: #6658d3;
+  transform: translateY(-1.5rem);
+}
+
+div.notification {
+  margin-bottom: 3vh;
+  width: 100%;
+}
+
+.notification {
+  gap: 2em;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+}
+
+.addMovie {
+  margin-top: 5vh;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 425px;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 1.75rem;
+}
+
+.addBtn {
+  box-shadow: 0 10px 20px 0 rgba(153, 153, 153, 0.25);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #735400;
+  line-height: 1.222;
+}
+.addBtn small {
+  display: block;
+  font-size: 0.75em;
+  font-weight: 400;
+  margin-top: 0.25em;
+}
+
+.action {
+  margin-top: 2rem;
+}
+
+.button-39 {
+  font: inherit;
+  font-size: 1.25rem;
+  padding: 1em;
+  width: 100%;
+  font-weight: 500;
+  background-color: #6658d3;
+  border-radius: 6px;
+  color: #FFF;
+  border: 0;
+}
+.button-39:focus {
+  outline: 0;
+}
+
+/*# sourceMappingURL=styles.css.map*/
