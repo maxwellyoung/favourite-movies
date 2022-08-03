@@ -35,19 +35,18 @@ const AddMovieForm = () => {
     <div className='addMovie columns center'>
       <button className="addBtn button is-info is-light" onClick={handleClick} >Would you like to add another movie?</button>
         {form && <form onSubmit={handleSubmit}>
-          <div className='column mb-4'>
-            <label className='label' htmlFor="movie">Title:</label>
-            <input type="type" id="movie" name="movie" onChange={handleChange}/>
+          <div className='input'>
+            <input className='input-field' placeholder="Title" type="type" id="movie" name="movie" onChange={handleChange}/>
           </div>
-          <div className='column'>
-            <label className='label'  htmlFor="director">Director:</label>
-            <input type="type" id="director" name="director" onChange={handleChange}/>
+          <div className='input'>
+            <input className='input-field' placeholder="Director" type="type" id="director" name="director" onChange={handleChange}/>
           </div>
-          <div className='column'>
-          <label className='label'  htmlFor="year">Year:</label>
-          <input type="type" id="year" name="year" onChange={handleChange}/>
+          <div className='input'>
+          <input className='input-field' placeholder="Title" type="type" id="year" name="year" onChange={handleChange}/>
           </div>
-          <button  className="button-39" >Add</button>
+          <div className='action'>
+            <button className="button-39" >Add</button>
+          </div>
       </form>}
       <div className="buttons">
   

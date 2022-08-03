@@ -19,6 +19,7 @@ body {
   // display: flex;
 }
 
+
 .hero {
   background: black url('../../server/public/images/tom-cruise.jpg') center / cover;
   background-repeat:space;
@@ -32,11 +33,12 @@ body {
 }
 
 .movieTitle {
-  font-size: 2rem;
+  font-size: 2.2rem;
   gap: 3rem;
 }
-#app > section.section > div.px-12 > section > div:nth-child(9) {
-  padding-right: 0%;
+
+.movies-container {
+  width: 100%;
 }
 
 
@@ -44,7 +46,7 @@ body {
 .main {
   display: flex;
   flex-direction: row;
-justify-content: center;
+  justify-content: center;
 }
 
 .header {
@@ -62,21 +64,51 @@ h1 {
 }
 
 form {
-  display: flex;
-  flex-direction: row;
-  font-weight: 500;
-  font-size: 1.3rem;
-  // text-align: end;
+
+	padding: 2rem 1rem 0;
 }
 
-label {
-  padding-top: 3vh;
+
+.label {
+	color: #8597a3;
+	position: absolute;
+	// top: 1.5rem;
+	transition: .25s ease;
+  
 }
 
 .column {
   text-align: end;
   margin-right: 0;
   margin-bottom: 5vh;
+}
+
+.input {
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+	&+.input {
+		margin-top: 1.5rem;
+	}
+}
+
+.input-field {
+  border: 0;
+	z-index: 1;
+	background-color: transparent;
+
+	font: inherit;
+	font-size: 1.125rem;
+	padding: .25rem 0;
+	&:focus, &:valid {
+		outline: 0;
+		border-bottom-color: #6658d3;
+		&+.input-label {
+			color: #6658d3;
+			transform: translateY(-1.5rem);
+		}
+	}
 }
 
 div.notification {
@@ -93,81 +125,50 @@ div.notification {
 }
 
 .addMovie {
-  margin-top: 3rem;
- 
+  margin-top: 5vh;
+	margin: 2rem auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 425px;
+	background-color: #FFF;
+	border-radius: 10px;
+	// box-shadow: 0 10px 20px 0 rgba(#999, .25);
+	padding: 1.75rem;
 }
 
 
+.addBtn {
+	box-shadow: 0 10px 20px 0 rgba(#999, .25);
+	font-size: 1.75rem;
+	font-weight: 700;
+	color: #735400;
+	line-height: 1.222;
+	small {
+		display: block;
+		font-size: .75em;
+		font-weight: 400;
+		margin-top: .25em;
+	}
+
+}
 
 
+.action {
+  margin-top: 2rem;
+}
 
-
-/* CSS */
 .button-39 {
-  background-color: #FFFFFF;
-  border: 1px solid rgb(209,213,219);
-  border-radius: .5rem;
-  box-sizing: border-box;
-  color: #111827;
-  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-  font-size: .875rem;
-  font-weight: 600;
-  line-height: 1.25rem;
-  padding: .75rem 1rem;
-  margin-top: 3vh;
-  text-align: center;
-  text-decoration: none #D1D5DB solid;
-  text-decoration-thickness: auto;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.button-39:hover {
-  background-color: rgb(249,250,251);
-}
-
-.button-39:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.button-39:focus-visible {
-  box-shadow: none;
-}
-
-/* CSS */
-.button-31 {
-  background-color: #222;
-  border-radius: 4px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.5;
-  margin: 0;
-  max-width: none;
-  min-height: 44px;
-  min-width: 10px;
-  outline: none;
-  overflow: hidden;
-  padding: 9px 20px 8px;
-  position: relative;
-  text-align: center;
-  text-transform: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 100%;
-}
-
-.button-31:hover,
-.button-31:focus {
-  opacity: .75;
+  font: inherit;
+	font-size: 1.25rem;
+	padding: 1em;
+	width: 100%;
+	font-weight: 500;
+	background-color: #6658d3;
+	border-radius: 6px;
+	color: #FFF;
+	border: 0;
+	&:focus {
+		outline: 0;
+	}
 }

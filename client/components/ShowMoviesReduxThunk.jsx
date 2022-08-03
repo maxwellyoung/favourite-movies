@@ -17,11 +17,11 @@ const ShowMoviesReduxThunk = () => {
 
   return (
     <>
-    <section className='container is-fluid'>
+    <section className='container movies-container'>
     {movies && movies.map(movies => {
         return (
-        <div className='movieCard container columns my-12 ' key={movies.id}>
-          <div className='notification'>
+        <div className='movieCard container columns my-12 center' key={movies.id}>
+          <div className='notification center'>
           <h2 className='movieTitle'>{movies.movie}</h2>
           <div className='movieDetails column'>
             
